@@ -1,4 +1,5 @@
 # This action save the credential as a random filename
+
 When GitHub workflow interact with Google Cloud, there is often a save the service account json key from a GitHub secret and use the filename in a later step.
 
 ## Inputs
@@ -15,15 +16,13 @@ When GitHub workflow interact with Google Cloud, there is often a save the servi
 
 ### `filename`
 
-
 ## Example usage
 
       - name: save GitHub secret as file
         id: save-google-service-account-key
-        uses: .\DesktopSetup\.github\actions\save-account-key
+        uses: rayhu/save-secret-as-file@v1
         with:
           secret: ${{ secrets.GCLOUD_SERVICE_ACCOUNT_JSON_KEY }}
-
 
 In the other steps, you can use the output from this step such as:
 
