@@ -1,0 +1,17 @@
+name: 'save GitHub secret as file'
+description: 'save secret as a file for later use'
+author: 'Ray Hu'
+inputs:
+  secret:
+    description: "the secret to save"
+    required: true
+  filename:
+    description: "the secret to save"
+    required: false
+    default: ~
+outputs:
+  filename:
+    description: "The file name of the output"
+runs:
+  using: 'node12'
+  main: 'dist/ index.js'
