@@ -1,5 +1,8 @@
 name: 'save GitHub secret as file'
 description: 'save secret as a file for later use'
+branding:
+  icon: 'save'
+  color: 'blue'
 author: 'Ray Hu'
 inputs:
   secret:
