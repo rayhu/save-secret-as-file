@@ -30,3 +30,6 @@ In the other steps, you can use the output from this step such as:
         uses: .\DesktopSetup\.github\actions\upload-cloud-storage
         with:
           application_credentials: ${{ steps.save-google-service-account-key.outputs.filename }}
+
+### This action is created following the document here:
+https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action
