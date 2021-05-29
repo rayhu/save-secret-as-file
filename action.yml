@@ -17,4 +17,4 @@ outputs:
     description: "The file name of the output"
 runs:
   using: 'node12'
-  main: 'dist/ index.js'
+  main: 'dist/index.js'
